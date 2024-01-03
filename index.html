@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="icon" type="image/svg+xml" href="snake.png" sizes="any">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="game-container">
+        <canvas id="snakeCanvas" width="400" height="400"></canvas>
+        <div id="score">Score: 0</div>
+        <label for="difficulty-dropdown">Select Difficulty:</label>
+        <select id="difficulty-dropdown">
+            <option value="easy">Easy</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="professional">Professional</option>
+            <option value="expert">Expert</option>
+            <option value="insane">Insane</option>
+        </select>
+        <button id="start-button">Start Game</button>
+        <div id="arrow-keys" style="display: none;">
+            <button class="arrow-key" data-key="up">↑</button>
+            <button class="arrow-key" data-key="left">←</button>
+            <button class="arrow-key" data-key="down">↓</button>
+            <button class="arrow-key" data-key="right">→</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8f1414;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecede6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limit the width for responsiveness */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+canvas {
+    border: 5px solid #8B4513; /* Thicker walls and brown color */
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#difficulty-dropdown {
+    font-size: 16px;
+    padding: 8px; /* Increased padding for better spacing */
+    margin-bottom: 10px; /* Added margin for spacing */
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    width: 100%; /* Make the dropdown full width */
+}
+
+#start-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button full width */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+#start-button:hover {
+    transform: scale(1.1);
+  }
+
+#arrow-keys {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        border: 5px solid #8B4513; /* Thicker walls and brown color */
+    }
+
+    #arrow-keys {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .arrow-key {
+        width: 33.33%;
+        text-align: center;
+        font-size: 18px;
+        padding: 8px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
